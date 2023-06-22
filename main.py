@@ -14,9 +14,9 @@ def generate_password():
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
-    nr_letters = [choice(letters) for l in range(randint(8, 10))]
-    nr_symbols = [choice(symbols) for s in range(randint(2, 4))]
-    nr_numbers = [choice(numbers) for n in range(randint(2, 4))]
+    nr_letters = [choice(letters) for _ in range(randint(8, 10))]
+    nr_symbols = [choice(symbols) for _ in range(randint(2, 4))]
+    nr_numbers = [choice(numbers) for _ in range(randint(2, 4))]
     password_list = nr_letters + nr_symbols + nr_numbers
 
     shuffle(password_list)
